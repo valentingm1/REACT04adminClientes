@@ -6,7 +6,7 @@ import Layout from './components/Layout'
 import NuevoCliente, {action as postCliente} from './pages/NuevoCliente'
 import Index, {loader as indexLoader } from './pages/Index'
 import ErrorPage from './components/ErrorPage.jsx'
-import EditarCliente, {loader as editarLoader} from './pages/EditarCliente'
+import EditarCliente, {loader as editarLoader, action as putCliente} from './pages/EditarCliente'
 
 
 const router = createBrowserRouter([
@@ -30,6 +30,7 @@ const router = createBrowserRouter([
       path: "/clientes/:clienteId/editar",
       element: <EditarCliente/>,
       loader: editarLoader,
+      action: putCliente,
       errorElement: <ErrorPage/>
     }
   ]
