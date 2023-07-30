@@ -12,8 +12,8 @@ function Cliente({cliente}) {
         </td>
 
         <td className="p-6 mx-4">
-        <p className="text-gray-600 "><span className="text-gray-800 font-bold">EMAIL: </span>{email}</p>
-        <p className="text-gray-600"><span className="text-gray-800 font-bold">TEL: </span>{telefono}</p>
+        <p className="text-gray-600 "><span className="text-gray-800 font-bold uppercase">EMAIL: </span>{email}</p>
+        <p className="text-gray-600"><span className="text-gray-800 font-bold uppercase">TEL: </span>{telefono}</p>
         </td>
 
         <td className="p-6 flex justify-center gap-4 ">
